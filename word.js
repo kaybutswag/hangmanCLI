@@ -12,7 +12,7 @@ for (var i=0; i<this.letters.length;i++){
     eachObj=new Letter(this.letters[i]);
      this.LetterArr.push(eachObj);  
     }
-
+//this will show the clue
     this.userString=function(){
         var shownClue="";
         for (var i=0;i<this.LetterArr.length;i++){
@@ -22,6 +22,7 @@ for (var i=0; i<this.letters.length;i++){
         console.log(this.guessState);
     };
     
+//this can change guessed to true
     this.secondFunction=function(someChar){
         for (var i=0;i<this.LetterArr.length;i++){
             this.LetterArr[i].checkLetter(someChar);
